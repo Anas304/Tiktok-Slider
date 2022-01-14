@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.demoapp.R
 import com.example.demoapp.network.model.Video
-import kotlinx.android.synthetic.main.item_single_video.view.*
+import kotlinx.android.synthetic.main.item_video.view.*
 
 class ViewPagerVideoAdapter(private val videos: List<Video>) :
     RecyclerView.Adapter<ViewPagerVideoAdapter.VideoViewHolder>() {
@@ -14,7 +14,7 @@ class ViewPagerVideoAdapter(private val videos: List<Video>) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VideoViewHolder {
         return VideoViewHolder(
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_single_video, parent, false)
+                .inflate(R.layout.item_video, parent, false)
         )
     }
 
